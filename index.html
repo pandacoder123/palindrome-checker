@@ -5,29 +5,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<script src="index.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
 		<style>
 			body {
 				text-align: center;
 				background-color: rgb(48, 48, 48);
 				color: white;
+				font-family: "Roboto", sans-serif;
 			}
 
 			button {
-				border-radius: 15px;
+				border-radius: 10px;
 				border: none;
 			}
 
 			#input {
-				border-radius: 25px;
+				border-radius: 10px;
 				border: none;
+				width: 15%;
+				color: white;
+				height: 25px;
+				background-color: transparent;
+				border: 2px solid white;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Palindrome Checker</h1>
+		<h1 style="font-size: 300%">Palindrome Checker</h1>
+		<i
+			>pal·in·drome (noun) - a word, phrase, or sequence that reads the same
+			backwards as forwards, e.g. madam, racecar, etc.</i
+		>
 		<br />
-		<input type="text" id="input" />
+		<br />
+		<br />
+		<input type="text" id="input" placeholder="racecar" />
 		<button onclick="check()" type="submit">Check</button>
+		<br />
 		<br />
 		<h2 id="result">This word is:</h2>
 	</body>
